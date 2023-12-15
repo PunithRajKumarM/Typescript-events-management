@@ -16,7 +16,7 @@ const Recorder = () => {
   const handleClick = () => {
     if (started) {
       window.clearInterval(interval.current);
-      dispatch(createUserEvent());
+      // dispatch(createUserEvent());
       dispatch(stop());
     } else {
       dispatch(start());
