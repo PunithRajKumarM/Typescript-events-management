@@ -94,7 +94,7 @@ const Calendar: React.FC<Props> = ({ events, loadUserEvents }) => {
       })}
     </div>
   ) : (
-    <p>Loading...</p>
+    <p style={{ textAlign: 'center' }}>Loading...</p>
   );
 };
 
