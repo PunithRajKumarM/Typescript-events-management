@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Typescript-events-management/static/css/main.90cc9fd1.css",
-    "main.js": "/Typescript-events-management/static/js/main.3af41edc.js",
+    "main.js": "/Typescript-events-management/static/js/main.16cddd7a.js",
     "static/js/787.ddc81bbf.chunk.js": "/Typescript-events-management/static/js/787.ddc81bbf.chunk.js",
     "index.html": "/Typescript-events-management/index.html",
     "main.90cc9fd1.css.map": "/Typescript-events-management/static/css/main.90cc9fd1.css.map",
-    "main.3af41edc.js.map": "/Typescript-events-management/static/js/main.3af41edc.js.map",
+    "main.16cddd7a.js.map": "/Typescript-events-management/static/js/main.16cddd7a.js.map",
     "787.ddc81bbf.chunk.js.map": "/Typescript-events-management/static/js/787.ddc81bbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90cc9fd1.css",
-    "static/js/main.3af41edc.js"
+    "static/js/main.16cddd7a.js"
   ]
 }
