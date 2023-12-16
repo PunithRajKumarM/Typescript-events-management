@@ -5,6 +5,9 @@ import cx from 'classnames';
 import { start, stop, selectDateStart } from '../../redux/recorder';
 import { addZero } from '../../lib/util';
 import { createUserEvent } from '../../redux/user-events';
+import { ThunkDispatch } from 'redux-thunk';
+import { RootState } from '../../redux/store';
+import { Action } from 'redux';
 
 const Recorder = () => {
   const dispatch = useDispatch();
@@ -13,10 +16,29 @@ const Recorder = () => {
   let interval = useRef<number>(0);
   const [, setCount] = useState<number>(0);
 
+  const dispatchThunk = useDispatch() as ThunkDispatch<
+    RootState,
+    undefined,
+    Action
+  >;
+
+  // const handleClick = () => {
+  //   if (started) {
+  //     window.clearInterval(interval.current);
+  //     dispatch(createUserEvent());
+  //     dispatch(stop());
+  //   } else {
+  //     dispatch(start());
+  //     interval.current = window.setInterval(() => {
+  //       setCount((count) => count + 1);
+  //     }, 1000);
+  //   }
+  // };
+
   const handleClick = () => {
     if (started) {
       window.clearInterval(interval.current);
-      // dispatch(createUserEvent());
+      dispatchThunk(createUserEvent());
       dispatch(stop());
     } else {
       dispatch(start());
